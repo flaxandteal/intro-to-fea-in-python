@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">  
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/league.css" id="theme"> 
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 0.5em;
+      }
+      html.img-left div.slide-background.present {
+        background-position: left;
+        background-size: contain;
+      }
+      html.img-right div.slide-background.present {
+        background-position: right;
+        background-size: contain;
+      }
+      html.img-right .slides {
+        text-align: left
+      }
+    </style>
+  </head>
+  <body>
+      <div class="reveal">
+        <div class="slides">
+          <section>
+            <h1>Introduction to Scientific Python</h1>
+            <p>for scientists, engineers and anybody else who will listen.</p>                
+          </section>
+          <section>
+            <h1>(Who is this bloke?)</h1>
+            <ul>
+              <li class='fragment'>Phil Weir</li>
+              <li class='fragment'>Studied maths</li>
+              <li class='fragment'>Got PhD in NZ (computational fluid-structure modelling)</li>
+              <li class='fragment'>Scientific programmer in industry (Dundalk)</li>
+              <li class='fragment'>+ professional background in web development</li>
+            </ul>
+          </section>
+          <section>
+            <h1>What is Python?</h1>
+            <p>Or better yet, Why Python?</p>                
+          </section>
+          <section data-background="images/snake-side.png" data-background-color="black" data-state="img-right">
+            <h1>Background</h1>
+            <ul>
+              <li>Properly indented pseudocode</li>
+              <li class='fragment'>Around since 90s</li>
+              <li class='fragment'>Science-compatible "ideology"</li>
+              <li class='fragment'>Readable</li>
+              <li class='fragment'>Rust/C/C++/FORTRAN compatible</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Where is Python?</h1>
+            <ul>
+              <li>Google, Apple</li>
+              <li class='fragment'>US National Labs</li>
+              <li class='fragment'>International research projects</li>
+            </ul>
+          </section>
+          <section>
+            <h1>How to Python?</h1>
+            <ul>
+              <li>Installs on any almost device (many already)</li>
+              <li class='fragment'>Read python.org</li>
+              <li class='fragment'>Check out scipy.org</li>
+              <li class='fragment'>Use stackoverflow.com</li>
+              <li class='fragment'>Get trigger happy with Google</li>
+            </ul>
+          </section>
+          <section>
+            <h1>So... Why Python?</h1>
+            <ul>
+              <li>Clean, quick, readable</li><aside class='notes'>bugs/line roughly constant over languages</aside>
+              <li class='fragment'>Extensive (and extensible) capabilities</li><aside class='notes'>general and employable</aside>
+              <li class='fragment'>Huge amount of information</li><aside class='notes'>plenty of help solving problems</aside>
+              <li class='fragment'>Lots of scientific users</li>
+              <li class='fragment'>Easier to pick up than most common alternatives...</li>
+            </ul>
+          </section>
+          <section>
+            <h1>A few examples</h1>
+          </section>
+          <section data-background-color="black" data-background='images/space-station.jpg' data-state='img-right'>
+            <h1>Space</h1>
+          </section>
+          <section data-background='images/antarctica.png' data-background-color='white'>
+            <h1 style='color: #113'>Antarctica</h1>
+          </section>
+          <section data-background='images/medical-research.jpg' data-background-color='white'>
+            <h1 style='color: #000808'>Cancer treatment</h1>
+          </section>
+          <aside class='notes'>And before you suggest this is not something you get coming from NI, i'm just picking areas I've used Python</aside>
+          <section>
+            <h1>Pretty much everywhere</h1>
+            <ul>
+              <li class='fragment'>But not exclusively</li>
+              <li class='fragment'>MATLAB/FORTRAN/Ruby/Go/Rust... also useful</li>
+              <li class='fragment'>Some disciplines more than others</li>
+              <li class='fragment'>Increasingly popular</li>
+              <li class='fragment'>Go to <strong>github.com</strong> or <strong>pypi.python.org</strong><br/>- search your favourite topic plus 'python'</li>
+            </ul>
+          </section>
+          <section>
+            <h2>How this course will be run...</h2>
+            <ul>
+              <li>Short focused tasks</li>
+              <aside class='notes'>Unlike standard Python courses, as first year PhDs the aim is to get you enough basics to learn yourselves
+              and enough of a taste to decide whether Python is the approach for you and your application</aside>
+              <li class='fragment'>Short applications talks</h2>
+              <li class='fragment'>Broad scope, bit of everything</h2>
+              <li class='fragment'>Get you going</h2>
+            </ul>
+        </div>
+      </div>
+  </body>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // Required, even if empty.
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+    });
+  </script>
+</html>
